@@ -1,7 +1,7 @@
 {
   "name": "@dword-design/tester-plugin-tmp-dir",
   "version": "1.0.1",
-  "description": "",
+  "description": null,
   "repository": "dword-design/tester-plugin-tmp-dir",
   "funding": "https://www.buymeacoffee.com/dword",
   "license": "MIT",
@@ -32,5 +32,7 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "homepage": null,
+  "keywords": []
 }
