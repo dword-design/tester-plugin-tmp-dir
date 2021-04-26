@@ -20,7 +20,7 @@
     "test": "base test"
   },
   "dependencies": {
-    "with-local-tmp-dir": "^2.2.18"
+    "with-local-tmp-dir": "^3.0.0"
   },
   "devDependencies": {
     "@dword-design/base": "^7.12.1",
