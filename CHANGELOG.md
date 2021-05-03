@@ -1,3 +1,19 @@
+# [2.0.0](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v1.0.5...v2.0.0) (2021-05-03)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base to v8 ([#11](https://github.com/dword-design/tester-plugin-tmp-dir/issues/11)) ([43fc0d2](https://github.com/dword-design/tester-plugin-tmp-dir/commit/43fc0d2828f9296607748dd0b83b6c30e3d7804a))
+
+
+### BREAKING CHANGES
+
+* require Node.js >= 12
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Sebastian Landwehr <info@dword-design.de>
+Co-authored-by: GitHub Actions <actions@github.com>
+
 ## [1.0.5](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v1.0.4...v1.0.5) (2021-04-28)
 
 
