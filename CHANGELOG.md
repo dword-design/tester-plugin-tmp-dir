@@ -1,3 +1,11 @@
+## [2.0.1](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.0.0...v2.0.1) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/functions to v4 ([#12](https://github.com/dword-design/tester-plugin-tmp-dir/issues/12)) ([5520879](https://github.com/dword-design/tester-plugin-tmp-dir/commit/55208796ef59d5cf5a205065ea999e0ce0c4737a))
+* update dependency depcheck-package-name to v2 ([#13](https://github.com/dword-design/tester-plugin-tmp-dir/issues/13)) ([0835eff](https://github.com/dword-design/tester-plugin-tmp-dir/commit/0835eff97ca30f0625d79580370e3a32ff178646))
+
 # [2.0.0](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v1.0.5...v2.0.0) (2021-05-03)
 
 
