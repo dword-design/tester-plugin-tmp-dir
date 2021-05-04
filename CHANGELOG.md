@@ -1,3 +1,12 @@
+## [2.0.2](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.0.1...v2.0.2) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester to v2 ([#14](https://github.com/dword-design/tester-plugin-tmp-dir/issues/14)) ([7165a02](https://github.com/dword-design/tester-plugin-tmp-dir/commit/7165a02a1b35383f9a0ec66370936f47cb5ea3d6))
+* update dependency fs-extra to v10 ([#15](https://github.com/dword-design/tester-plugin-tmp-dir/issues/15)) ([362189d](https://github.com/dword-design/tester-plugin-tmp-dir/commit/362189d1905aceb90cc7bb82932c74c7930ebc2f))
+* update dependency with-local-tmp-dir to v4 ([#16](https://github.com/dword-design/tester-plugin-tmp-dir/issues/16)) ([318cb61](https://github.com/dword-design/tester-plugin-tmp-dir/commit/318cb61b475df4f723fcf08f2b06e1c2d56b0ce1))
+
 ## [2.0.1](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.0.0...v2.0.1) (2021-05-04)
 
 
