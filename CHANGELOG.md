@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.0.3...v2.1.0) (2021-06-11)
+
+
+### Features
+
+* options ([#20](https://github.com/dword-design/tester-plugin-tmp-dir/issues/20)) ([7ed8a02](https://github.com/dword-design/tester-plugin-tmp-dir/commit/7ed8a023d5c2566fafd0fba51453219101da547c))
+
 ## [2.0.3](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.0.2...v2.0.3) (2021-05-28)
 
 
