@@ -8,6 +8,26 @@ import self from '.'
 
 export default tester(
   {
+    option: async () => {
+      await outputFile(
+        'index.spec.js',
+        endent`
+        import tester from '@dword-design/tester'
+        import P from 'path'
+        import self from '../src'
+
+        export default tester({
+          works: async () => expect(P.basename(process.cwd()).startsWith('foo-')).toEqual(true),
+        }, [self({ prefix: 'foo' })])
+
+      `
+      )
+      await execa('mocha', [
+        '--ui',
+        packageName`mocha-ui-exports-auto-describe`,
+        'index.spec.js',
+      ])
+    },
     works: async () => {
       await outputFile(
         'index.spec.js',
