@@ -2,7 +2,7 @@
   "name": "@dword-design/tester-plugin-tmp-dir",
   "version": "2.1.1",
   "repository": "dword-design/tester-plugin-tmp-dir",
-  "funding": "https://www.buymeacoffee.com/dword",
+  "funding": "https://github.com/sponsors/dword-design",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@sebastianlandwehr.com>",
   "main": "dist/index.js",
