@@ -8,6 +8,34 @@ import self from '.'
 
 export default tester(
   {
+    'before each': async () => {
+      await outputFile(
+        'index.spec.js',
+        endent`
+        import tester from '@dword-design/tester'
+        import P from 'path'
+        import self from '../src'
+
+        export default tester({
+          works: async () => {},
+        }, [
+          self(),
+          {
+            beforeEach: () => {
+              expect(P.dirname(process.cwd())).toEqual(process.env.SUITE_CWD)
+              expect(P.basename(process.cwd()).startsWith('tmp-')).toEqual(true)
+            }
+          }
+        ])
+
+      `
+      )
+      await execa(
+        'mocha',
+        ['--ui', packageName`mocha-ui-exports-auto-describe`, 'index.spec.js'],
+        { env: { SUITE_CWD: process.cwd() } }
+      )
+    },
     option: async () => {
       await outputFile(
         'index.spec.js',
