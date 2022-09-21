@@ -1,3 +1,10 @@
+## [2.1.6](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.1.5...v2.1.6) (2022-09-19)
+
+
+### Bug Fixes
+
+* use beforeEach and afterEach instead of transform ([#73](https://github.com/dword-design/tester-plugin-tmp-dir/issues/73)) ([f377beb](https://github.com/dword-design/tester-plugin-tmp-dir/commit/f377beb0d5dcfabc20b1926159a0e5af1c3c64bf))
+
 ## [2.1.5](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.1.4...v2.1.5) (2022-01-12)
 
 
