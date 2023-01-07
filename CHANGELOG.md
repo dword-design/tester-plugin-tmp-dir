@@ -1,3 +1,10 @@
+## [2.1.7](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.1.6...v2.1.7) (2023-01-07)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#74](https://github.com/dword-design/tester-plugin-tmp-dir/issues/74)) ([7e9f570](https://github.com/dword-design/tester-plugin-tmp-dir/commit/7e9f570e758786cb17ab77c26c6a78250fe08375))
+
 ## [2.1.6](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.1.5...v2.1.6) (2022-09-19)
 
 
