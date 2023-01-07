@@ -2,34 +2,36 @@ import { endent } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import packageName from 'depcheck-package-name'
 import execa from 'execa'
-import { outputFile } from 'fs-extra'
+import outputFiles from 'output-files'
 
-import self from '.'
+import self from './index.js'
 
 export default tester(
   {
     'before each': async () => {
-      await outputFile(
-        'index.spec.js',
-        endent`
-        import tester from '@dword-design/tester'
-        import P from 'path'
-        import self from '../src'
+      await outputFiles({
+        'index.spec.js': endent`
+          import tester from '@dword-design/tester'
+          import P from 'path'
+          import { expect } from 'expect'
 
-        export default tester({
-          works: async () => {},
-        }, [
-          self(),
-          {
-            beforeEach: () => {
-              expect(P.dirname(process.cwd())).toEqual(process.env.SUITE_CWD)
-              expect(P.basename(process.cwd()).startsWith('tmp-')).toEqual(true)
+          import self from '../src/index.js'
+
+          export default tester({
+            works: async () => {},
+          }, [
+            self(),
+            {
+              beforeEach: () => {
+                expect(P.dirname(process.cwd())).toEqual(process.env.SUITE_CWD)
+                expect(P.basename(process.cwd()).startsWith('tmp-')).toEqual(true)
+              }
             }
-          }
-        ])
+          ])
 
-      `
-      )
+        `,
+        'package.json': JSON.stringify({ type: 'module' }),
+      })
       await execa(
         'mocha',
         ['--ui', packageName`mocha-ui-exports-auto-describe`, 'index.spec.js'],
@@ -37,19 +39,21 @@ export default tester(
       )
     },
     option: async () => {
-      await outputFile(
-        'index.spec.js',
-        endent`
-        import tester from '@dword-design/tester'
-        import P from 'path'
-        import self from '../src'
+      await outputFiles({
+        'index.spec.js': endent`
+          import tester from '@dword-design/tester'
+          import P from 'path'
+          import { expect } from 'expect'
 
-        export default tester({
-          works: async () => expect(P.basename(process.cwd()).startsWith('foo-')).toEqual(true),
-        }, [self({ prefix: 'foo' })])
+          import self from '../src/index.js'
 
-      `
-      )
+          export default tester({
+            works: async () => expect(P.basename(process.cwd()).startsWith('foo-')).toEqual(true),
+          }, [self({ prefix: 'foo' })])
+
+        `,
+        'package.json': JSON.stringify({ type: 'module' }),
+      })
       await execa('mocha', [
         '--ui',
         packageName`mocha-ui-exports-auto-describe`,
@@ -57,22 +61,24 @@ export default tester(
       ])
     },
     works: async () => {
-      await outputFile(
-        'index.spec.js',
-        endent`
-        import tester from '@dword-design/tester'
-        import P from 'path'
-        import self from '../src'
+      await outputFiles({
+        'index.spec.js': endent`
+          import tester from '@dword-design/tester'
+          import P from 'path'
+          import { expect } from 'expect'
+          
+          import self from '../src/index.js'
 
-        export default tester({
-          works: async () => {
-            expect(P.dirname(process.cwd())).toEqual(process.env.SUITE_CWD)
-            expect(P.basename(process.cwd()).startsWith('tmp-')).toEqual(true)
-          },
-        }, [self()])
+          export default tester({
+            works: async () => {
+              expect(P.dirname(process.cwd())).toEqual(process.env.SUITE_CWD)
+              expect(P.basename(process.cwd()).startsWith('tmp-')).toEqual(true)
+            },
+          }, [self()])
 
-      `
-      )
+        `,
+        'package.json': JSON.stringify({ type: 'module' }),
+      })
       await execa(
         'mocha',
         ['--ui', packageName`mocha-ui-exports-auto-describe`, 'index.spec.js'],
