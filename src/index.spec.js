@@ -1,7 +1,6 @@
 import { endent } from '@dword-design/functions'
 import tester from '@dword-design/tester'
-import packageName from 'depcheck-package-name'
-import execa from 'execa'
+import { execa } from 'execa'
 import outputFiles from 'output-files'
 
 import self from './index.js'
@@ -32,11 +31,9 @@ export default tester(
         `,
         'package.json': JSON.stringify({ type: 'module' }),
       })
-      await execa(
-        'mocha',
-        ['--ui', packageName`mocha-ui-exports-auto-describe`, 'index.spec.js'],
-        { env: { SUITE_CWD: process.cwd() } }
-      )
+      await execa('mocha', ['--ui', 'exports', 'index.spec.js'], {
+        env: { SUITE_CWD: process.cwd() },
+      })
     },
     option: async () => {
       await outputFiles({
@@ -54,11 +51,7 @@ export default tester(
         `,
         'package.json': JSON.stringify({ type: 'module' }),
       })
-      await execa('mocha', [
-        '--ui',
-        packageName`mocha-ui-exports-auto-describe`,
-        'index.spec.js',
-      ])
+      await execa('mocha', ['--ui', 'exports', 'index.spec.js'])
     },
     works: async () => {
       await outputFiles({
@@ -79,11 +72,9 @@ export default tester(
         `,
         'package.json': JSON.stringify({ type: 'module' }),
       })
-      await execa(
-        'mocha',
-        ['--ui', packageName`mocha-ui-exports-auto-describe`, 'index.spec.js'],
-        { env: { SUITE_CWD: process.cwd() } }
-      )
+      await execa('mocha', ['--ui', 'exports', 'index.spec.js'], {
+        env: { SUITE_CWD: process.cwd() },
+      })
     },
   },
   [self()]
