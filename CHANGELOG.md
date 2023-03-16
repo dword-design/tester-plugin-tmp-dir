@@ -1,3 +1,10 @@
+## [2.1.11](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.1.10...v2.1.11) (2023-03-16)
+
+
+### Bug Fixes
+
+* update dependency execa to v7.1.1 ([bc38ce2](https://github.com/dword-design/tester-plugin-tmp-dir/commit/bc38ce263cddf85a23e66274cc9f261b3f2941ee))
+
 ## [2.1.10](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.1.9...v2.1.10) (2023-03-15)
 
 
