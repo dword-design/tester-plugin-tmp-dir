@@ -1,3 +1,10 @@
+## [2.1.20](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.1.19...v2.1.20) (2023-04-09)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/functions to v4.1.7 ([4ab26ff](https://github.com/dword-design/tester-plugin-tmp-dir/commit/4ab26ff0659aa99d4af75fdfce270a4b149811e1))
+
 ## [2.1.19](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.1.18...v2.1.19) (2023-04-09)
 
 
