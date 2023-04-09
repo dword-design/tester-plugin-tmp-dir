@@ -1,3 +1,10 @@
+## [2.1.21](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.1.20...v2.1.21) (2023-04-09)
+
+
+### Bug Fixes
+
+* update dependency output-files to v2.0.21 ([8ff1113](https://github.com/dword-design/tester-plugin-tmp-dir/commit/8ff1113bc79e015ae21eeb255251ee1a37d60c52))
+
 ## [2.1.20](https://github.com/dword-design/tester-plugin-tmp-dir/compare/v2.1.19...v2.1.20) (2023-04-09)
 
 
