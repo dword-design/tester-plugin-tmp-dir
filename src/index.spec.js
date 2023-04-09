@@ -59,7 +59,7 @@ export default tester(
           import tester from '@dword-design/tester'
           import P from 'path'
           import { expect } from 'expect'
-          
+
           import self from '../src/index.js'
 
           export default tester({
@@ -77,5 +77,5 @@ export default tester(
       })
     },
   },
-  [self()]
+  [self()],
 )
